@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h1>Zomato</h1>
+      <form id="searchForm">
+        <input type="text" id="searchTerm" name="term" placeholder="Search for a restaurant...">
+        <input type="number" id="avgcostfor2" name="avgcostfor2" placeholder="Max cost">
+        <select name="select-search" id="select-search">
+          <option value="restaurant">Restaurant</option>
+          <option value="city">City</option>
+          <option value="cuisine">Cuisine</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="restaurantList">
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div id="pagination">
+        <input type="number" id="pageNum" placeholder="Go to page...">
+        <button id="goToPage">Go</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
